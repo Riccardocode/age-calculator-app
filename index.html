@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="main-content">
+      <!--***********START INPUT SECTION************-->
+      <div class="input-section">
+        <div class="single-input">
+          <label id="id-label-day" for="day">Day</label>
+          <input type="text" id="day" placeholder="DD">
+          <div id="id-text-alert-day" class="field-required-text text-alert ">
+            <!-- This field is required -->
+          </div>
+        </div>
+        <div class="single-input">
+          <label id="id-label-month" for="month">Month</label>
+          <input type="text" id="month" placeholder="MM">
+          <div id="id-text-alert-month" class="field-required-text text-alert ">
+            <!-- This field is required -->
+          </div>
+        </div>
+        <div class="single-input">
+          <label id="id-label-year" for="year">Year</label>
+          <input type="text" id="year" placeholder="YYYY">
+          <div id="id-text-alert-year" class="field-required-text text-alert ">
+            <!-- This field is required -->
+          </div>
+        </div>
+      </div>
+      <!--***********END INPUT SECTION**************-->
+
+      <!--***********START BREAK LINE***************-->
+      <div class="break-line">
+        <hr class="line">
+        <div class="center-item" onClick="calculateAge()">
+          <img id="arrow-img" src="./assets/images/icon-arrow.svg" alt="">
+
+        </div>
+        <hr class="line hidden-line">
+      </div>
+      <!--***********END BREAK LINE*****************-->
+
+      <!--***********START OUTPUT SECTION***********-->
+      <div class="output">
+        <h1><span id="years" class="output-value">--</span> years</h1>
+        <h1><span id="months" class="output-value">--</span> months</h1>
+        <h1><span id="days" class="output-value">--</span> days</h1>
+      </div>
+      <!--***********END OUTPUT SECTION*************-->
+    </div>
+  </main>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Riccardo</a>.
+  </div>
+</body>
+<script src="./index.js"></script>
+</html>
